@@ -1,0 +1,29 @@
+<template name="header">
+    <header class="main-navigation" id="site-header">
+    <hgroup id="logo">
+        <a aria-label="Home" class="freddie" href="/" role="button">
+            <h1><span class="hide">Meteor User Management</span></h1>
+        </a>
+    </hgroup>
+    <div class="navigation" role="navigation">
+        <nav class="site-nav">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/services">Services</a>
+            <a class="nav-link" href="/support">Support</a>
+            <a class="nav-link" href="/">Blog</a>
+        </nav>
+        <nav class="action-nav">
+            <a aria-label="Sign Up Free" class="btn-small signup primary pop" data-no-cta="" href="/join" role="button">Sign Up Free</a>
+            <a aria-label="Log In" class="nav-login nav-link" href="/already-a-user/login" role="button">Log In</a>
+            <a aria-label="Menu" class="hide" data-dinner-menu="Menu" href="/search" role="button" tabindex="2">
+              <i class="fa fa-bars"></i>
+              <span class="hide">Menu</span>
+            </a>
+            <a aria-label="Search"  data-dinner-menu="Search" href="/search" role="button" tabindex="1">
+                <i class="fa fa-search"></i>
+                <span class="hide">Search</span>
+            </a>
+        </nav>
+    </div>
+</header>
+</template>

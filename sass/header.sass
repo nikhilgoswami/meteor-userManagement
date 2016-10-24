@@ -1,0 +1,139 @@
+@import {wolves:bourbon}/bourbon
+@import {wolves:bitters}/base
+@import {wolves:neat}/neat
+// body ::selection
+//   background: #d8f0f6
+
+#site-header
+    display: inline-block
+    height: 62px
+    // overflow: hidden
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #fff
+    z-index: 2000
+    -webkit-backface-visibility: hidden
+    -ms-backface-visibility: hidden
+    backface-visibility: hidden
+    -webkit-perspective: 1000
+    -ms-perspective: 1000
+    perspective: 1000
+    box-shadow: 0 0 2px rgba(6,8,8,0.15)
+
+#logo
+    width: 10%
+    min-width: 48px
+    height: 100%
+    max-height: 40px
+    margin: 12px 0
+    display: inline-block
+    box-sizing: border-box
+    float: left
+    .freddie
+      width: 100%
+      height: 100%
+      display: block
+      background: transparent url(/logo.svg) no-repeat center center
+      h1
+        display: none
+a
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  text-decoration: none
+  color: #2c9ab7
+.hide
+  display: none
+
+#site-header
+  .navigation
+      width: 90%
+      display: inline-block
+      vertical-align: top
+      position: relative
+      z-index: 2001
+      height: 100%
+      box-sizing: border-box
+      .site-nav
+        width: 55%
+        max-width: 840px
+        text-align: left
+      .site-nav, .action-nav
+        display: inline-block
+        vertical-align: top
+        height: 100%
+        box-sizing: border-box
+        .btn-small
+          color: #fff
+          display: inline-block
+          box-sizing: border-box
+          position: relative
+          border: 0
+          font-family: $helvetica
+          font-size: 16px
+          line-height: 1.6875
+          padding: .5625em 1.5em
+          font-weight: bold
+          text-align: center
+          letter-spacing: 0.02em
+          text-decoration: none
+          max-width: 100%
+          -webkit-font-smoothing: antialiased
+          border-radius: 4px
+          transition: all 0.2s ease
+          background: #b7b7b7
+          margin-right: 12px
+          height: auto
+        .pop
+          background: #e85c41
+.action-nav i::before
+  @include position(relative, center)
+  font-size: 12px
+  line-height: 1.75
+  letter-spacing: 0.04em
+  display: inline-block
+  vertical-align: middle
+  width: 15%
+  text-align: center
+  padding: 0 18px
+  position: relative
+  color: #3a3a3a
+  display: inline-block
+  vertical-align: middle
+  -webkit-tap-highlight-color: transparent
+  box-sizing: border-box
+.nav-link
+    width: 15%
+    min-width: 85px
+    text-align: center
+    height: 62px
+    line-height: 62px
+    padding: 0 18px
+.nav-link, .links_section-main .links-list a, .more-overlay-close
+    position: relative
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif
+    font-size: 12px
+    font-weight: bold
+    line-height: 1.75
+    letter-spacing: 0.04em
+    color: #3a3a3a
+    padding: 20px 18px
+    display: inline-block
+    vertical-align: middle
+    -webkit-tap-highlight-color: transparent
+    box-sizing: border-box
+.action-nav
+  float: right
+.signup
+  font-size: 12px!important
+.nav-link:hover,.action-nav i:hover
+  outline: none
+  text-decoration: none
+  background-color: #f9f9f9
+.site-nav .nav-link:first-child
+  margin-left: 20px
