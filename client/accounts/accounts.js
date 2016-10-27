@@ -1,3 +1,7 @@
+var onSubmitFun = function(){
+  console.log("This is on submit hook.");
+
+}
 AccountsTemplates.configure({
     // Behavior
     confirmPassword: false,
@@ -13,7 +17,7 @@ AccountsTemplates.configure({
     showForgotPasswordLink: true,
     // showLabels: true,
     // showPlaceholders: true,
-    showResendVerificationEmailLink:false,
+    showResendVerificationEmailLink:true,
 
     // Privacy Policy and Terms of Use
     privacyUrl: 'privacy',
@@ -26,9 +30,9 @@ AccountsTemplates.configure({
 
     // Hooks
     // onLogoutHook: myLogoutFunc,
-    // onSubmitHook: mySubmitFunc,
+    onSubmitHook: onSubmitFun,
     // preSignUpHook: myPreSubmitFunc,
-    // postSignUpHook: myPostSubmitFunc,
+    // postSignUpHook: postSubmitFun,
 
     // Texts
     texts: {
@@ -88,17 +92,17 @@ AccountsTemplates.addFields([
     displayName: 'Password',
     placeholder: 'Password',
     minLength: 6,
-    re: /(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
+    // re: /(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
     errStr: 'At least 1 digit, 1 lower-case and 1 upper-case',
 },
-{
-    _id: 'passwordConfirm',
-    type: 'password',
-    required: true,
-    displayName: 'Confirm Password',
-    placeholder: 'Confirm Password',
-    minLength: 6,
-    errStr: 'Sorry the password don\'t match!',
-},
+// {
+//     _id: 'passwordConfirm',
+//     type: 'password',
+//     required: true,
+//     displayName: 'Confirm Password',
+//     placeholder: 'Confirm Password',
+//     minLength: 6,
+//     errStr: 'Sorry the password don\'t match!',
+// },
 
 ]);
